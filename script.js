@@ -53,10 +53,13 @@ let idx = 0;
 
 function carrossel() {
   idx++;
+
   if (idx > img.length - 1) {
     idx = 0;
   }
-  imgs.style.transform = `translateX(${-idx * 450}px)`;
+
+  let larguraImg = imgs.clientWidth; // Obtém a largura real do contêiner
+  imgs.style.transform = `translateX(${-idx * larguraImg}px)`;
 }
 
 setInterval(carrossel, 3800);
