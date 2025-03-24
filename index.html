@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surpresa</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="start-screen">
+      <button class="click" onclick="startGift()">💕 Click</button>
+    </div>
+
+    <div class="main-screen">
+      <div class="player">
+        <span id="musicName"></span>
+
+        <audio id="player" src=""></audio>
+        <div class="controls">
+          <button id="prevButton"><i class="bx bx-skip-previous"></i></button>
+          <button id="playPauseButton">
+            <i class="bx bx-caret-right"></i>
+          </button>
+          <button id="nextButton"><i class="bx bx-skip-next"></i></button>
+        </div>
+        <div class="footer">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="time">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+      </div>
+      <script type="module" src="./script2.js"></script>
+
+      <div class="carrossel">
+        <div class="container" id="img">
+          <img src="./praia.JPEG" />
+          <img src="./anonovo.JPEG" />
+          <img src="./cadeira.JPEG" />
+          <img src="./aliancas.JPEG" />
+          <img src="./lingua.JPEG" />
+        </div>
+      </div>
+      <p id="love-time">
+        ❤️Nós namoramos há: <br /><strong><span id="dating-time"></span></strong
+        ><br />
+        Mas eu já te amo há:<br /><strong>
+          <span id="time-counter"></span>
+        </strong>
+      </p>
+      <hr />
+      <p>
+        A cada dia que passa, eu te amo mais.<br />
+        Cada sorriso seu ilumina o meu mundo, e cada abraço me faz sentir que
+        estou exatamente onde queria estar.<br />
+        Você é a razão dos meus melhores pensamentos, e tudo ao seu lado se
+        torna mais bonito e significativo.<br />
+        <strong>Eu te amo para sempre.💕 </strong>
+      </p>
+    </div>
+  </body>
+</html>
